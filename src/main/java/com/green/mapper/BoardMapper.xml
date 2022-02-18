@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.green.mapper.BoardMapper">
+	
+	
+	<select id="getMax" resultType="Long">
+		select max(bno) from board
+	</select>
+
+
+	<select id="getList" resultType="com.green.vo.BoardVO">
+	select bno, title from board where mno = #{mno}
+	</select>
+	
+	<select id="getListAll" resultType="com.green.vo.BoardVO">
+		select * from board where mno = #{mno}
+	</select>	
+	
+
+	<select id="getMno" resultType="Integer">
+		select mno from board where bno = #{bno}
+	</select>	
+
+	<insert id="insert">
+		insert into board (bno, mno, title, content, writer) 
+			values (seq_board.nextval, #{mno}, #{title},#{content},#{writer})
+	</insert>
+	
+	<insert id="insertSelectKey">	
+		<selectKey keyProperty="bno" order="BEFORE" resultType="Integer">
+			select seq_board.nextval from dual
+		</selectKey>
+		insert into board (bno, mno, title, content, writer)
+			values(#{bno}, #{mno}, #{title},#{content},#{writer})
+	</insert>
+	
+	<select id="read" resultType="com.green.vo.BoardVO">
+		select * from board where bno =#{bno}
+	</select>
+	
+	<delete id="delete">
+		delete from board where bno =#{bno}
+	</delete>
+	
+	<update id="update">
+		update board
+			set title =#{title},content =#{content}, writer=#{writer}, updateDate = sysdate 
+				where bno = #{bno}
+	</update>
+
+
+</mapper>

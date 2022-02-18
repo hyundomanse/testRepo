@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.green.mapper.BoardAttachMapper">
+
+	<select id="findByBno" resultType="com.green.vo.BoardAttachVO">
+		select * from file_tbl where
+		bno = #{bno}
+	</select>
+
+
+
+	<insert id="insert">
+		insert into file_tbl (fileNo, uuid, uploadPath,
+		fileName, bno)
+		values (file_seq.nextval, #{uuid}, #{uploadPath}, #{fileName}, #{bno})
+	</insert>
+
+
+
+
+
+
+
+</mapper>

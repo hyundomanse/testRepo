@@ -1,0 +1,275 @@
+.new-writing {
+    position: absolute;
+    right: -130px;
+    top: 242px;
+}
+
+.new-writing img{width: 50%;}
+
+.background-img{
+    height: 86vh;
+    background-image: url(img/background_brick.png);
+    background-size: contain;
+    background-position: center;
+}
+.new_write{min-width: 800px; z-index: 2; position: absolute; width: 30%; top: 50%; left: 50%; transform: translate(-50%, -50%);
+
+
+}
+.typewriter{position: absolute; left:45%; top:18%; transform: translateX(-50%);}
+.typewriter h1{
+    font-family: 'Hahmlet', serif; font-size: 1rem; 
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 2s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+.typewriter button{font-size: 0.8rem; position:absolute; border:none; border-radius: 50%; width:50px; height:50px;left:190px; top:-10px;}
+@keyframes typing{
+    from {width: 0}
+    to{width: 100%}
+}
+@keyframes blink-caret{
+    from, to{border-color: transparent}
+    50% {border-color: orange}
+}
+
+
+.container-fluid{
+    padding: 0 30px;
+}
+.navbar-toggler {
+    border: none !important;
+    outline:none !important;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;           
+}
+
+.content-background{
+    position: relative;
+    height: 68vh;
+}
+
+.dot1, .dot2, .comma1{position:absolute;}
+.dot1{top: 100px; width: 100px; left: 50px;}
+.dot2{top: 50%; width: 50px; right: 0;}
+.comma1{bottom: -14%; width: 30px; left: 29%;}
+.navbar {
+    box-shadow: 1px 2px 5px 1px #1a1a1a;
+    z-index: 333;
+    padding-top: 25px;
+    border-bottom: 10px solid gray;  
+}
+hr{
+    margin: 60px 0;
+}
+
+.splide{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.splide__track {width: 800px;}
+.splide-container{
+    margin: 0 auto;
+    display: flex;
+    background-color: #000;
+    width: 600px;
+    height: 280px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-section01 {width: 300px; position:absolute; left:145px; top: 85px;}
+.slide-section01 p{font-family: 'Hahmlet', serif; font-size: 1.4rem; line-height: 1.4;}
+.slide-section02 {width: 180px; position:absolute; left:448px; top:105px;}
+.slide-section03 {width: 140px; position: absolute; right:0px;}
+.slide-section03 img {width: 100%}
+.slide-btn {width: 270px; height: 41px; color: #fff; background-color:#1AA1A1; border-top-right-radius: 20px; border-bottom-left-radius: 20px; position: absolute;left:145px; bottom: 49px; font-size: 0.8rem; border:none;}
+
+.splide__pagination {
+    display: inline-grid !important;
+    bottom: 7.5rem;
+    left: 55px !important;
+}
+
+.splide__pagination__page.is-active {background: #000 !important;}
+.splide__arrows{display: none !important;}
+
+.type{
+    width: 10%;
+    position: absolute;
+    text-align: right;
+    bottom: -9vh;
+    right: 1vw;  
+    -webkit-box-reflect: below -2.5vw 
+    -webkit-gradient(linear, left top, left bottom, from(transparent),
+    color-stop(0.45, transparent), to(rgba(255,255,255,0.25)));       
+}
+
+footer{
+    box-shadow: 0px 3px 8px 6px rgb(72 72 72);
+    width: 100%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-color: #D9D9D7;
+    z-index: 333;
+}
+
+.footer-container {
+    padding-top: 2.5%;
+}
+
+.footer-list{
+    min-width: 310px;
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer-list li {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 0.8rem;
+
+}
+small {
+    width: 300px;
+    display: block;
+    margin: 10px auto;
+    transform: translateX(18%);
+}
+
+.keyboard {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    z-index: 1;
+}
+
+
+ 	.mypageDiv{
+	    z-index: 2;
+	    display: inline-block;
+	    left: 50% !important;
+	    position: absolute !important;
+	    top: 50% !important;
+	    transform: translate(-50%, -50%);	
+  	}
+  	
+  	.firstDiv{
+		width: 100px !important;
+	    transform: translateX(38%);
+	    /* display: grid; */
+	    /* width: 28%; */
+	    top: -65px;
+	    width: 10vw;
+	    left: -250px;
+	    position: absolute;
+  	}
+  	  .secondDiv{
+  	  	width: 80px;
+		left: -57px;
+    	top: -65px;
+	     position: absolute;  	  	
+  	  	}
+  	
+  	  .thirdDiv{
+	    width: 85px;
+	    left: 114px;
+	    position: absolute;
+	    top: -65px;  	
+  	  	}
+  	  	
+   	  .fourthDiv{
+	    width: 30px;
+	    position: absolute;
+	    left: -180px;
+	    top: 130px;
+  	  	}
+  	  .fourthDiv span:nth-child(2){
+		overflow: hidden;
+	    height: 100px;
+	    display: block;
+	    text-overflow: clip;
+  	  }
+  	  	
+  	  	
+  	  .fifthDiv{
+		text-overflow: ellipsis;
+	    height: 120px;
+	    width: 22px;
+	    top: 130px;
+	    position: absolute;
+	    left: -112px;
+  	  	}
+  	  	
+  	  .fifthDiv span:nth-child(2){
+		overflow: hidden;
+	    height: 100px;
+	    display: block;
+	    text-overflow: clip;
+  	  }
+  	  	
+  	  .sixthDiv{
+	    display: inline-block;
+	    position: absolute;
+	    top: 126px;
+	    width: 30px;
+	    left: -45px;
+		}	
+  	  
+  	  .sixthDiv span:nth-child(2){
+		overflow: hidden;
+	    height: 100px;
+	    display: block;
+	    text-overflow: clip;
+  	  }
+  	   	
+  	   .seventhDiv{   
+	    display: inline-block;
+	    position: absolute;
+	    top: 126px;
+	    width: 30px;
+	    left: 50px;
+		}  	
+  	  	
+  	  .seventhDiv span:nth-child(2){
+		overflow: hidden;
+	    height: 100px;
+	    display: block;
+	    text-overflow: clip;
+  	  }
+  	  	
+       .eightDiv{
+	    display: inline-block;
+	    position: absolute;
+	    top: 126px;
+	    width: 30px;
+	    left: 123px;
+		}
+		  	
+  	  .eightDiv span:nth-child(2){
+		overflow: hidden;
+	    height: 100px;
+	    display: block;
+	    text-overflow: clip;
+  	  }		  

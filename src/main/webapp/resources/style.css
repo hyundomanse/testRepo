@@ -1,0 +1,157 @@
+
+body {
+ margin-top: 50px !important;
+ width: 900px;
+ height: 1300px;
+ background-color: whitesmoke;
+ margin: 0 auto;
+ position: relative;
+}
+div{
+  width: 800px !important;
+  margin: auto;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+div {
+  border: none;
+}
+button,input,select {
+  margin:4px;
+}
+button {
+    border: none;
+    color: black;
+}
+
+.title-box {position: relative;}
+/* .title{
+  padding-left: 10px;
+  background-color: #a3a3a3;
+  border: none;
+  outline: none !important;
+  left: 43px;
+  width: 792px;
+  position: absolute;
+  top: 10px;
+  height: 40px;
+  color: #fff;
+} */
+input::placeholder {
+  color: #fff;
+}
+
+/* .bar{
+  content: "";
+  width: 804px !important;
+  height: 7px;
+  background-color: #000;
+  position: absolute;
+  top: 5px;
+  left:47px;
+
+
+} */
+
+.menu button{background-color: whitesmoke; padding-bottom: 5px;}
+/* .menu1 {
+  display: flex;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 70px;
+  left: 50%;  
+} */
+.menu2{
+  display: flex;
+  top: 9%;
+  transform: translateX(-50%);
+  position: absolute;
+  border: none;
+  margin-bottom: 10px;
+  left: 50%;
+}
+
+.menu label{line-height: 2.4;}
+
+.drag-area{
+  width: 100%;
+  left: 50%;
+  position: absolute;
+  top: 9%;
+  transform: translateX(-50%);
+}
+
+.write-btns{
+  text-align: center;
+  position: absolute;
+  left:50%;
+  bottom: 30%;
+  transform: translateX(-50%);
+}
+
+.write-btns .s-btn{padding: 10px; width: 100px; border-radius: 20px;background-color: #000;color: #fff;}
+.write-btns .c-btn{padding: 10px; width: 100px; border-radius: 20px; background-color: #fff; border: 1px solid gray;}
+
+#item {width: 200px;}
+.imgStyle {width: 100%;}
+
+
+.item {position: absolute; top:10%; left:10%;}
+
+
+
+		.row.box {
+			position: absolute;
+			bottom: 0;
+		}
+		.uploadResult {
+			width: 1000px;
+			background-color: gray;
+		}
+
+		.uploadResult ul {
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.uploadResult ul li {
+			list-style: none;
+			padding: 10px;
+			align-content: center;
+			text-align: center;
+		}
+
+		.uploadResult ul li img {
+			width: 200px;
+		}
+
+		.uploadResult ul li span {
+			color: white;
+		}
+
+		.bigPictureWrapper {
+			position: absolute;
+			display: none;
+			justify-content: center;
+			align-items: center;
+			top: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: gray;
+			z-index: 100;
+			background: rgba(255, 255, 255, 0.5);
+		}
+
+		.bigPicture {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.bicPicture img {
+			width: 600px;
+		}
